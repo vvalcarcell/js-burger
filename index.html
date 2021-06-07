@@ -5,29 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Create Your Burger</title>
 </head>
 
 <body>
-    <form>
+    <div class="container">
+        <main>
+            <header>
+                <h1>Create Your Burger</h1>
+                <div class="img-container">
+                    <img src="./img/burger-top.png" alt="burger-image">
+                </div>
+            </header>
+            <form>
 
-        <input type="checkbox" id="cheese" class="addition" value="10">
-        <label for="cheese">Cheese</label>
+                <input type="checkbox" id="cheese" class="addition" value="10">
+                <label for="cheese">Cheese</label>
 
-        <input type="checkbox" id="egg" class="addition" value="20">
-        <label for="egg">Egg</label>
+                <input type="checkbox" id="egg" class="addition" value="20">
+                <label for="egg">Egg</label>
 
-        <input type="checkbox" id="mustard" class="addition" value="5">
-        <label for="mustard">Mustard</label>
+                <input type="checkbox" id="mustard" class="addition" value="5">
+                <label for="mustard">Mustard</label>
 
-    </form>
+                <input type="checkbox" id="tomato" class="addition" value="5">
+                <label for="tomato">Tomato</label>
 
-    <input type="text" id="d-coupon">
+                <input type="checkbox" id="lettuce" class="addition" value="5">
+                <label for="lettuce">Lettuce</label>
 
-    <button type="button" id="calculate">Calculate!</button>
+                <input type="checkbox" id="ketchup" class="addition" value="5">
+                <label for="ketchup">Ketchup</label>
 
-    <div id="final-price"></div>
-    <div id="d-price"></div>
+            </form>
+
+            <input type="text" id="d-coupon">
+
+            <button type="button" id="calculate">Calculate!</button>
+
+            <div id="final-price"></div>
+            <div id="d-price"></div>
+        </main>
+    </div>
 
     <script type="text/javascript" src="js/script.js"></script>
 </body>

@@ -1,0 +1,42 @@
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+font-family: 'Baloo Tammudu 2', cursive;
+}
+
+/* COMMON RULES*/
+.img-container > img {
+height: 100%;
+}
+
+/* END COMMON RULES*/
+.container {
+background-color: rgb(226, 215, 226);
+height: 100vh;
+}
+
+main {
+width: 50%;
+background-color: white;
+}
+
+header {
+height: 130px;
+background-color: #fdbb40;
+position: relative;
+}
+
+header h1 {
+position: absolute;
+top: 40px;
+left: 50px;
+}
+
+header .img-container {
+height: 230px;
+position: absolute;
+right: -90px;
+top: -30px;
+}
+

@@ -1,5 +1,7 @@
 var calculate = document.getElementById('calculate');
-var coupon = document.getElementById('d-coupon');
+var dCoupon = document.getElementById('d-coupon');
+var coupon = 'SEICARO';
+var discount = 0.1;
 
 var result = 50;
 document.getElementById('final-price').innerHTML = 'Your Price is € ' + result;
@@ -20,9 +22,8 @@ calculate.addEventListener('click', function () {
 
     document.getElementById('final-price').innerHTML = 'Your Price is € ' + result;
 
-    var dCoupon = document.getElementById('d-coupon');
-    if (dCoupon.value === 'SEICARO') {
-        var dPrice = result - (result * 0.10);
+    if (dCoupon.value === coupon) {
+        var dPrice = result - (result * discount);
         document.getElementById('d-price').innerHTML = 'But only for you the special price is € ' + dPrice + '!';
     }
 
