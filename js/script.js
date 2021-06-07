@@ -1,9 +1,12 @@
 var calculate = document.getElementById('calculate');
 var coupon = document.getElementById('d-coupon');
 
+var result = 50;
+document.getElementById('final-price').innerHTML = 'Your Price is € ' + result;
+
 calculate.addEventListener('click', function () {
 
-    var result = 0;
+    var result = 50;
 
     var additions = document.getElementsByClassName('addition');
 
@@ -15,16 +18,13 @@ calculate.addEventListener('click', function () {
 
     }
 
+    document.getElementById('final-price').innerHTML = 'Your Price is € ' + result;
+
     var dCoupon = document.getElementById('d-coupon');
     if (dCoupon.value === 'SEICARO') {
         var dPrice = result - (result * 0.10);
+        document.getElementById('d-price').innerHTML = 'But only for you the special price is € ' + dPrice + '!';
     }
-
-    document.getElementById('final-price').innerHTML = 'Your Price is € ' + result;
-    document.getElementById('d-price').innerHTML = 'But only for you the special price is € ' + dPrice + '!';
 
 });
 
-// coupon.addEventListener('click', function(){
-
-// })
