@@ -22,9 +22,11 @@ calculate.addEventListener('click', function () {
 
     document.getElementById('final-price').innerHTML = 'Your Price is € ' + result;
 
-    if (dCoupon.value === coupon) {
-        var dPrice = result - (result * discount);
+    if (dCoupon.value.length > 0 && dCoupon.value === coupon) {
+        var dPrice = (result - (result * discount)).toFixed(2);
         document.getElementById('d-price').innerHTML = 'But only for you the special price is € ' + dPrice + '!';
+    } else if (dCoupon.value.length > 0 && dCoupon.value !== coupon) {
+        alert('Attenzione! Il tuo Coupon non è valido!')
     }
 
 });

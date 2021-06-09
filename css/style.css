@@ -11,12 +11,11 @@ height: 100%;
 }
 
 /* END COMMON RULES*/
-.container {
+body {
 background-color: rgb(226, 215, 226);
-height: 100vh;
 }
 
-main {
+.container {
 width: 50%;
 background-color: white;
 }
@@ -24,19 +23,31 @@ background-color: white;
 header {
 height: 130px;
 background-color: #fdbb40;
-position: relative;
+display: flex;
+justify-content: space-between;
 }
 
 header h1 {
-position: absolute;
-top: 40px;
-left: 50px;
+flex: 1 0 auto;
+margin-left: 50px;
+margin-top: 40px;
 }
 
 header .img-container {
 height: 230px;
-position: absolute;
-right: -90px;
-top: -30px;
+margin-top: -20px;
+margin-right: -70px;
+}
+
+@media all and (max-width: 1199px){
+.container {
+width: 80%;
+}
+}
+
+@media all and (max-width: 991px){
+.container {
+width: 100%;
+}
 }
 
