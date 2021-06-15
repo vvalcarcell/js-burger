@@ -11,18 +11,21 @@ height: 100%;
 }
 
 /* END COMMON RULES*/
-body {
+.container-fluid {
 background-color: rgb(226, 215, 226);
 }
 
 .container {
 width: 50%;
 background-color: white;
+display: flex;
+flex-direction: column;
 }
 
 header {
 height: 130px;
 background-color: #fdbb40;
+flex: 0 0 auto;
 display: flex;
 justify-content: space-between;
 }
@@ -37,6 +40,89 @@ header .img-container {
 height: 230px;
 margin-top: -20px;
 margin-right: -70px;
+}
+
+main {
+flex: 1 0 auto;
+padding: 50px;
+
+}
+
+form > div {
+width: calc(100% / 2 - 20px);
+display: inline-block;
+margin-top: 20px;
+}
+
+form  img {
+height: 50px;
+vertical-align: middle;
+}
+
+form span, form label {
+margin: 0 10px;
+font-size: 18px;
+font-weight: bold;
+}
+
+form label {
+color: #dd2247e5;
+}
+
+.coupon-box {
+margin-top: 50px ;
+}
+
+#d-coupon {
+border: none;
+background-color: rgb(253, 230, 187);
+vertical-align: middle;
+margin-left: 20px;
+width: 70%;
+border-radius: 10px;
+height: 30px;
+font-size: 18px;
+color: rgba(0, 0, 0, 0.733);
+padding-top: 10px;
+padding-left: 10px;
+}
+
+#d-coupon:focus {
+    outline: none;
+}
+
+.button {
+margin-top: 30px;
+text-align: center;
+}
+
+#calculate {
+width: 130px;
+height: 50px;
+background-color: #fdbb40;
+font-size: 20px;
+font-weight: bold;
+border: none;
+border-radius: 10px;
+padding-top: 8px;
+margin-left: -20px;
+}
+
+footer{
+height: 100px;
+flex: 0 0 auto;
+padding: 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #dc143c;
+color: white;
+font-weight: bold;
+font-size: 30px;
+}
+
+footer div {
+line-height: 40px;
 }
 
 @media all and (max-width: 1199px){
